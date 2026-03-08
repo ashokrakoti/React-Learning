@@ -1,0 +1,28 @@
+{
+  "name": "reactlearning",
+  "version": "1.0.0",
+  "description": "Namaste React class content",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashokrakoti/React-Learning.git"
+  },
+  "keywords": [
+    "react",
+    "namaste",
+    "react",
+    "learning"
+  ],
+  "author": "Ashok Rakoti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashokrakoti/React-Learning/issues"
+  },
+  "homepage": "https://github.com/ashokrakoti/React-Learning#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
