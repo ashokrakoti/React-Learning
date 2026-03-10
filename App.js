@@ -1,42 +1,10 @@
-/**
- * <div>
- *    <div>
- *          <h1> heading <h1>
- *          <h1> heading <h1>      
- *    </div>
- * </div>
- */
+import React from "react";
+import ReactDom from "react-dom/client";
 
-/**
- * <parent>
- *    <child>
- *          <h1> heading <h1>
- *          <h1> heading <h1>      
- *    </child>
- *    <child>
- *          <h1> heading <h1>
- *          <h1> heading <h1>      
- *    </child>
- * </parent>
- */
+// JSX - html/Xml like syntax
+// it is not html inside js
+//it is a syntactical sugar over the react to make dev life easier
 
-
-
-//<!--creating a new dom element-->
-        const parent = React.createElement("div",
-             { id: "parent"}, 
-             [React.createElement("div",{id : "child"},[
-                  React.createElement("h1",{ id: "heading1"},"hello world from inner html"),
-                  React.createElement("h2",{ id: "heading2"},"hello world from inner html"),
-                  React.createElement("h3",{ id: "heading3"},"hello world from inner html")
-            ]),
-            React.createElement("div",{id : "child"},[
-                  React.createElement("h1",{ id: "heading1"},"hello world from inner html"),
-                  React.createElement("h2",{ id: "heading2"},"hello world from inner html"),
-                  React.createElement("h3",{ id: "heading3"},"hello world from inner html")
-            ])]
-      );
-
-       // <!--here we re using the react dom to crate root . react core doesnot have it-->
-        const root = ReactDOM.createRoot(document.getElementById("root"));
-        root.render(parent);
+const jsxHeading = <h1 id="heading">Namaste React using JSX !</h1>;
+const root = ReactDom.createRoot(document.getElementById("root"));
+root.render(jsxHeading);
